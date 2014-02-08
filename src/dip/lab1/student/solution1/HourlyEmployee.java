@@ -17,12 +17,12 @@ public class HourlyEmployee implements Employee {
     private static final String employeeType = "Hourly Employee";
     
     public HourlyEmployee(double payRate, double hours) {
-        this.payRate = payRate;
-        this.totalHoursForYear = hours;
+        this.setPayRate(payRate);
+        this.setTotalHoursForYear(hours);
     }
     
     @Override
-    public double getAnnualWage() {
+    public final double getAnnualWage() {
         return totalHoursForYear * payRate;
     }
 
@@ -44,7 +44,7 @@ public class HourlyEmployee implements Employee {
     
     //setters
     public final void setTotalHoursForYear(double hours) {
-        if (hours > 3188640 || hours < 0) {
+        if (hours > 8765 || hours < 0) {
             System.out.println("You must enter a valid number of hours");
         }
         else {
@@ -53,8 +53,8 @@ public class HourlyEmployee implements Employee {
     }
 
     public final void setPayRate(double payRate) {
-        if (payRate < 7.25) {
-            System.out.println("You can't work for less then minimum wage");
+        if (payRate < 7.25 || payRate > 1000) {
+            System.out.println("You must enter a valid pay rate");
         }
         else {
             this.payRate = payRate;

@@ -17,8 +17,8 @@ public class SalariedEmployee implements Employee {
     private static final String employeeType = "Salaried Employee";
 
     public SalariedEmployee(double salary, double annualBonus) {
-        this.yearlySalary = salary;
-        this.annualBonus = annualBonus;
+        this.setYearlySalary(salary);
+        this.setAnnualBonus(annualBonus);
     }
     
     @Override
