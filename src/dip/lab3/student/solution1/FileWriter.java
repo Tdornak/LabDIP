@@ -10,6 +10,11 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
-public class FileWriter {
+public class FileWriter implements Writer {
+
+    @Override
+    public void write(String line) {
+        
+    }
     
 }

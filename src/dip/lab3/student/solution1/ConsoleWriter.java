@@ -10,6 +10,11 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
-public class Messenger {
+public class ConsoleWriter implements Writer {
+
+    @Override
+    public void write(String line) {
+        
+    }
     
 }

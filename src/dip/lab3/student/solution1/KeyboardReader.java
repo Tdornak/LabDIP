@@ -10,6 +10,11 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
-public class KeyboardReader {
+public class KeyboardReader implements Reader {
+
+    @Override
+    public String read() {
+        return null;
+    }
     
 }

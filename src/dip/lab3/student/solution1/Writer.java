@@ -11,5 +11,5 @@ package dip.lab3.student.solution1;
  * @author Tim
  */
 public interface Writer {
-    
+    public abstract void write(String line);
 }
