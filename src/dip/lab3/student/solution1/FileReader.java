@@ -21,7 +21,7 @@ public class FileReader implements Reader {
     private String line;
     
     @Override
-    public String read() {
+    public String readMessage() {
         
         try {
             input = new Scanner(file);

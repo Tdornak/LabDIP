@@ -20,7 +20,7 @@ public class KeyboardReader implements Reader {
     
     
     @Override
-    public String read() {
+    public String readMessage() {
         System.out.println("Reading from keyboard...");
         line = keyboard.nextLine();
         return line;

@@ -17,7 +17,7 @@ public class GuiWriter implements Writer {
     private final JOptionPane gui = new JOptionPane();
     
     @Override
-    public void write(String line) {
+    public void sendMessage(String line) {
         JOptionPane.showMessageDialog(null, line);
     }
     

@@ -19,7 +19,7 @@ public class FileWriter implements Writer {
     private PrintWriter output;
     
     @Override
-    public void write(String line) {
+    public void sendMessage(String line) {
         try {
             output = new PrintWriter("file.txt");
             output.println(line);

@@ -10,6 +10,7 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
+
 public class Messanger {
     Reader reader;
     Writer writer;
@@ -20,7 +21,7 @@ public class Messanger {
     }
     
     public void messege() {
-        String line = reader.read();
-        writer.write(line);
+        String line = reader.readMessage();
+        writer.sendMessage(line);
     }
 }
