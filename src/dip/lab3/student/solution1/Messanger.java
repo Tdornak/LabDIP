@@ -12,16 +12,18 @@ package dip.lab3.student.solution1;
  */
 
 public class Messanger {
-    Reader reader;
-    Writer writer;
+    private Input input;
+    private Output output;
     
-    public Messanger(Reader reader, Writer writer) {
-        this.reader = reader;
-        this.writer = writer;
+    // takes any class that implements the Input or Output interfaces
+    public Messanger(Input input, Output output) {
+        this.input = input;
+        this.output = output;
     }
     
+    //delegates work to the proper low-level classes
     public void messege() {
-        String line = reader.readMessage();
-        writer.sendMessage(line);
+        String line = input.readMessage();
+        output.sendMessage(line);
     }
 }

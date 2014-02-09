@@ -12,18 +12,16 @@ import java.util.Scanner;
  *
  * @author Tim
  */
-public class KeyboardReader implements Reader {
+public class KeyboardInput implements Input {
 
-    
     private Scanner keyboard = new Scanner(System.in);
     private String line;
     
-    
+    //returns a String read from the keyboard
     @Override
     public String readMessage() {
         System.out.println("Reading from keyboard...");
         line = keyboard.nextLine();
         return line;
     }
-    
 }

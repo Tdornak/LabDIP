@@ -6,19 +6,16 @@
 
 package dip.lab3.student.solution1;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author Tim
  */
-public class GuiWriter implements Writer {
+public class ConsoleOutput implements Output {
 
-    private final JOptionPane gui = new JOptionPane();
     
+    //outputs a message to the console
     @Override
     public void sendMessage(String line) {
-        JOptionPane.showMessageDialog(null, line);
+        System.out.println(line);
     }
-    
 }

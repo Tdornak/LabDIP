@@ -10,6 +10,13 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
-public interface Reader {
-    public abstract String readMessage();
+public class GoodMorningInput implements Input {
+
+    private final String message = "Good morning!!";
+    
+    @Override
+    public String readMessage() {
+        return message;
+    }
+    
 }

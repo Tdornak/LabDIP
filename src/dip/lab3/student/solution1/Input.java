@@ -10,13 +10,6 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
-public class Startup {
-    
-    public static void main(String[] args) {
-        Input input = new GoodMorningInput();
-        Output output = new ConsoleOutput();
-        Messanger m1 = new Messanger(input, output);
-        m1.messege();
-        
-    }
+public interface Input {
+    public abstract String readMessage();
 }

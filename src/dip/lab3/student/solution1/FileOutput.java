@@ -14,10 +14,12 @@ import java.io.PrintWriter;
  *
  * @author Tim
  */
-public class FileWriter implements Writer {
+public class FileOutput implements Output {
 
     private PrintWriter output;
     
+    
+    //Outputs a message to a file
     @Override
     public void sendMessage(String line) {
         try {
@@ -28,5 +30,4 @@ public class FileWriter implements Writer {
             System.out.println("File Not Found");
         }
     }
-    
 }

@@ -14,12 +14,14 @@ import java.util.Scanner;
  *
  * @author Tim
  */
-public class FileReader implements Reader {
+public class FileInput implements Input {
 
     private File file = new File("file.txt");
     private Scanner input;
     private String line;
     
+    
+    //returns a String read from a file
     @Override
     public String readMessage() {
         
@@ -35,5 +37,4 @@ public class FileReader implements Reader {
         input.close();
         return line;
     }
-    
 }
