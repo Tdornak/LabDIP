@@ -6,15 +6,34 @@
 
 package dip.lab3.student.solution1;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 /**
  *
  * @author Tim
  */
 public class FileReader implements Reader {
 
+    private File file = new File("file.txt");
+    private Scanner input;
+    private String line;
+    
     @Override
     public String read() {
-        return null;
+        
+        try {
+            input = new Scanner(file);
+        } catch (FileNotFoundException ex) {
+            System.out.println("File Not Found");
+        }
+        
+        while (input.hasNext()) {
+            line += input.nextLine();
+        }
+        input.close();
+        return line;
     }
     
 }

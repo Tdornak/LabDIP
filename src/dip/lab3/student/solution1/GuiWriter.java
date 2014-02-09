@@ -6,15 +6,19 @@
 
 package dip.lab3.student.solution1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Tim
  */
 public class GuiWriter implements Writer {
 
+    private final JOptionPane gui = new JOptionPane();
+    
     @Override
     public void write(String line) {
-        
+        JOptionPane.showMessageDialog(null, line);
     }
     
 }
