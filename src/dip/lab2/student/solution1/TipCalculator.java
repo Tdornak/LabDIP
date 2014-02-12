@@ -6,21 +6,16 @@
 
 package dip.lab2.student.solution1;
 
-
-
 /**
  *
  * @author Tim
  */
-public class TipCalculator {
+public interface TipCalculator {
     
-    TipCalculatorService tipCalculator;
+    public abstract double getCalculatedTip();
     
-    public TipCalculator(TipCalculatorService tip) {
-        this.tipCalculator = tip;
+    public enum ServiceQuality {
+        GOOD, FAIR, POOR
     }
     
-    public double getTip() {
-        return tipCalculator.getCalculatedTip();
-    }
 }

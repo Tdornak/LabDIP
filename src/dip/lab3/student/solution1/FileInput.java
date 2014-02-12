@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * @author Tim
  */
-public class FileInput implements Input {
+public class FileInput implements MessageInput {
 
     private File file = new File("file.txt");
     private Scanner input;

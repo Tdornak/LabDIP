@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Tim
  */
-public class KeyboardInput implements Input {
+public class KeyboardInput implements MessageInput {
 
     private Scanner keyboard = new Scanner(System.in);
     private String line;

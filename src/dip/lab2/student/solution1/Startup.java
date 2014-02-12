@@ -6,7 +6,7 @@
 
 package dip.lab2.student.solution1;
 
-import dip.lab2.student.solution1.TipCalculatorService.ServiceQuality;
+import dip.lab2.student.solution1.TipCalculator.ServiceQuality;
 import java.text.NumberFormat;
 
 
@@ -22,8 +22,8 @@ public class Startup {
         NumberFormat fmt = NumberFormat.getCurrencyInstance();
         //FoodService Constructor takes a service quality (GOOD, POOR, FAIR) and a double : BillAmount
         //BaggageService constructor take a service quality (GOOD, POOR, FAIR) and a int : number of bags
-        TipCalculatorService tip1 = new FoodServiceTipCalculator(ServiceQuality.POOR, 50);
-        TipCalculator calc = new TipCalculator(tip1);
+        TipCalculator tip1 = new BaggageServiceTipCalculator(ServiceQuality.GOOD, 5);
+        TipCalculatorService calc = new TipCalculatorService(tip1);
         
         System.out.println(fmt.format(calc.getTip()));
     }

@@ -10,6 +10,6 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
-public interface Output {
-    public abstract void sendMessage(String line);
+public interface MessageInput {
+    public abstract String readMessage();
 }

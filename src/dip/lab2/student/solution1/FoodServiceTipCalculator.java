@@ -10,7 +10,7 @@ package dip.lab2.student.solution1;
  *
  * @author Tim
  */
-public class FoodServiceTipCalculator implements TipCalculatorService {
+public class FoodServiceTipCalculator implements TipCalculator {
     private static final double MIN_BILL = 0.00;
     private static final double GOOD_RATE = 0.20;
     private static final double FAIR_RATE = 0.15;

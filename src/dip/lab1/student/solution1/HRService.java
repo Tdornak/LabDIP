@@ -6,7 +6,6 @@
 
 package dip.lab1.student.solution1;
 
-import java.text.NumberFormat;
 
 /**
  *
@@ -14,15 +13,12 @@ import java.text.NumberFormat;
  */
 public class HRService {
     
-    Employee employee;
-    NumberFormat fmt = NumberFormat.getCurrencyInstance();
-    
-    public HRService(Employee e) {
-        this.employee = e;
+    public String getEmployeeType(Employee e) {
+        return e.getEmployeeType();
     }
     
-    public void getEmployeeInfo() {
-        System.out.println(employee.getEmployeeType() + " made " + fmt.format(employee.getAnnualWage()) + " this year");
+    public double getEmployeeAnnualWage(Employee e) {
+        return e.getAnnualWage();
     }
     
 }

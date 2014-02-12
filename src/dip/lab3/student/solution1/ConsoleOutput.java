@@ -10,12 +10,12 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
-public class ConsoleOutput implements Output {
+public class ConsoleOutput implements MessageOutput {
 
     
     //outputs a message to the console
     @Override
-    public void sendMessage(String line) {
-        System.out.println(line);
+    public void sendMessage(MessageInput line) {
+        System.out.println(line.readMessage());
     }
 }

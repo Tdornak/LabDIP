@@ -12,14 +12,14 @@ import javax.swing.JOptionPane;
  *
  * @author Tim
  */
-public class GuiOutput implements Output {
+public class GuiOutput implements MessageOutput {
 
     private final JOptionPane gui = new JOptionPane();
     
     
     //Outputs a message to the gui
     @Override
-    public void sendMessage(String line) {
-        JOptionPane.showMessageDialog(null, line);
+    public void sendMessage(MessageInput line) {
+        JOptionPane.showMessageDialog(null, line.readMessage());
     }
 }

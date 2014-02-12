@@ -13,8 +13,8 @@ package dip.lab3.student.solution1;
 public class Startup {
     
     public static void main(String[] args) {
-        Input input = new GoodMorningInput();
-        Output output = new ConsoleOutput();
+        MessageInput input = new GoodMorningInput();
+        MessageOutput output = new ConsoleOutput();
         Messanger m1 = new Messanger(input, output);
         m1.messege();
         

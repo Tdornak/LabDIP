@@ -10,7 +10,7 @@ package dip.lab3.student.solution1;
  *
  * @author Tim
  */
-public class GoodMorningInput implements Input {
+public class GoodMorningInput implements MessageInput {
 
     private final String message = "Good morning!!";
     

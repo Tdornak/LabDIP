@@ -14,14 +14,14 @@ import java.io.PrintWriter;
  *
  * @author Tim
  */
-public class FileOutput implements Output {
+public class FileOutput implements MessageOutput {
 
     private PrintWriter output;
     
     
     //Outputs a message to a file
     @Override
-    public void sendMessage(String line) {
+    public void sendMessage(MessageInput line) {
         try {
             output = new PrintWriter("file.txt");
             output.println(line);
