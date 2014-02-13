@@ -15,7 +15,7 @@ public class Startup {
     public static void main(String[] args) {
         MessageInput input = new GoodMorningInput();
         MessageOutput output = new ConsoleOutput();
-        Messanger m1 = new Messanger(input, output);
+        Messenger m1 = new Messenger(input, output);
         m1.messege();
         
     }

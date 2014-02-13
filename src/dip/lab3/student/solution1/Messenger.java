@@ -11,18 +11,18 @@ package dip.lab3.student.solution1;
  * @author Tim
  */
 
-public class Messanger {
-    private MessageInput MessageInput;
-    private MessageOutput MessageOutput;
+public class Messenger {
+    private MessageInput messageInput;
+    private MessageOutput messageOutput;
     
     // takes any class that implements the Input or Output interfaces
-    public Messanger(MessageInput input, MessageOutput output) {
-        this.MessageInput = input;
-        this.MessageOutput = output;
+    public Messenger(MessageInput input, MessageOutput output) {
+        this.messageInput = input;
+        this.messageOutput = output;
     }
     
     //delegates work to the proper low-level classes
     public void messege() {
-        MessageOutput.sendMessage(MessageInput);
+        messageOutput.sendMessage(messageInput);
     }
 }
